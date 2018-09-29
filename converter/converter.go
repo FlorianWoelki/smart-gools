@@ -4,11 +4,11 @@ import (
 	"unsafe"
 )
 
-func GetBinaryDigits(value uint) string {
-	var mask uint = 1 << uint(unsafe.Sizeof(value) * 8 - 1)
+func GetBinaryDigits(value byte) string {
+	var mask byte = 1 << byte(unsafe.Sizeof(value)*8-1)
 	var bitField string
 
-	for i := 0; i < int(unsafe.Sizeof(value) * 8); i++ {
+	for i := 0; byte(i) < byte(unsafe.Sizeof(value)*8); i++ {
 		if (value & mask) == 0 {
 			bitField += "0"
 		} else {
