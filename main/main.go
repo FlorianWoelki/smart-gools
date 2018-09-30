@@ -2,25 +2,12 @@ package main
 
 import (
 	"fmt"
-	"smart-gools/converter"
+	"smart-gools/gool"
 )
 
 func main() {
-	flags := [8]bool{true, false, false, true, true, true, false, true}
+	flags := []bool{true, false, false, true, true, true, false, true}
 
-	var encoded byte
-
-	for i := 0; i < 8; i++ {
-		bit := bool2int(flags[i])
-		encoded = (encoded << 1) | bit
-	}
-
-	fmt.Println(converter.GetBinaryDigits(encoded))
-}
-
-func bool2int(b bool) byte {
-	if b {
-		return 1
-	}
-	return 0
+	g := gool.Gool{Values: flags}
+	fmt.Println(g.GetBinaryDigits())
 }
