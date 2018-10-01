@@ -1,6 +1,7 @@
 # smart-gools
 
 smart-gools is a simple lib you can use, by saving some memory for multiple booleans.
+I know that in go you already can save booleans in one byte, but this project is just for testing and practicing.
 
 ## What is this project about?
 
