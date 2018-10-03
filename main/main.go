@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	flags := []bool{true, false, false, true, true, true, false, true}
+	flags := [8]bool{true, false, false, true, true, true, false, true}
 
 	g := gool.Gool{Values: flags}
 	fmt.Println(gool.GetBinaryDigits(g.Encode()))

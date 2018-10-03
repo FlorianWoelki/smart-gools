@@ -5,7 +5,7 @@ import (
 )
 
 type Gool struct {
-	Values      []bool
+	Values      [8]bool
 	encodedByte byte
 }
 
