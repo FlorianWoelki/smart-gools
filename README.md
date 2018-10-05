@@ -20,19 +20,11 @@ Coming Soon.
 
 Coming Soon.
 
-## Deployment
-
-Coming Soon.
-
 ## Built With
 
-* Golang 19
+* Golang 1.9.2
 
 ## Contributing
-
-Coming Soon.
-
-## Versioning
 
 Coming Soon.
 
